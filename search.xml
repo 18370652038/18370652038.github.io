@@ -1,46 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search>
-  <entry>
-    <title>python爬虫 RSA加密破解</title>
-    <url>/2021/09/07/python%E7%88%AC%E8%99%AB-RSA%E5%8A%A0%E5%AF%86%E7%A0%B4%E8%A7%A3/</url>
-    <content><![CDATA[<p>目标网站</p>
-<p>aHR0cDovL2Nhcy5zd3VzdC5lZHUuY24vYXV0aHNlcnZlci9sb2dpbg==</p>
-<p>加密定位和分析</p>
-<p><img src="/2021/09/07/python%E7%88%AC%E8%99%AB-RSA%E5%8A%A0%E5%AF%86%E7%A0%B4%E8%A7%A3/1111.png" alt="python爬虫-RSA加密破解"></p>
-<span id="more"></span>
-
-<p>第六个参数password是一段加密的参数</p>
-<p><img src="/2021/09/07/python%E7%88%AC%E8%99%AB-RSA%E5%8A%A0%E5%AF%86%E7%A0%B4%E8%A7%A3/2222.png" alt="python爬虫-RSA加密破解"></p>
-<p> 这个就是今天的主要目标了，也是唯一的加密参数。</p>
-<p>   1.先去搜索下password关键词</p>
-<p><img src="/2021/09/07/python%E7%88%AC%E8%99%AB-RSA%E5%8A%A0%E5%AF%86%E7%A0%B4%E8%A7%A3/3333.png" alt="python爬虫-RSA加密破解"></p>
-<p> 可以逐个点开看看，这里很明显是最后一个给的赋值。</p>
-<p> <img src="/2021/09/07/python%E7%88%AC%E8%99%AB-RSA%E5%8A%A0%E5%AF%86%E7%A0%B4%E8%A7%A3/4444.png" alt="python爬虫-RSA加密破解"></p>
-<p> 进去后我们就能看到，这里用的RSA加密，断点进入RSAUtils里面</p>
-<p>  <img src="/2021/09/07/python%E7%88%AC%E8%99%AB-RSA%E5%8A%A0%E5%AF%86%E7%A0%B4%E8%A7%A3/5555.png" alt="python爬虫-RSA加密破解"></p>
-<p>   接下来直接把这个js文件下载下来然后修改运行就能获取到加密了</p>
-<p>  <img src="/2021/09/07/python%E7%88%AC%E8%99%AB-RSA%E5%8A%A0%E5%AF%86%E7%A0%B4%E8%A7%A3/6666.png" alt="python爬虫-RSA加密破解"></p>
-<p>  定义一个js函数来计算返回值</p>
-<p>最后一个参数是验证码。</p>
-<p>请求成功</p>
-]]></content>
-      <tags>
-        <tag>爬虫</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>python爬虫-某街的cookies和md5加密</title>
-    <url>/2021/09/20/python%E7%88%AC%E8%99%AB-%E6%9F%90%E8%A1%97%E7%9A%84cookies%E5%92%8Cmd5%E5%8A%A0%E5%AF%86/</url>
-    <content><![CDATA[<p>目标网站，参考鱼哥的</p>
-<p>aHR0cHM6Ly9saXN0Lm1vZ3UuY29tL3NlYXJjaC9nb29kcz9xPSVFNSVCNyVBNSVFOCVBMyU4NSVFOCVBMyVBNA==</p>
-<p>第一步抓包</p>
-<p><img src="/2021/09/20/python%E7%88%AC%E8%99%AB-%E6%9F%90%E8%A1%97%E7%9A%84cookies%E5%92%8Cmd5%E5%8A%A0%E5%AF%86/1.png" alt="图片"></p>
-<p>可以看到里面有10个参数，取一个参数mw-ttid去全局检索</p>
-<p><img src="/2021/09/20/python%E7%88%AC%E8%99%AB-%E6%9F%90%E8%A1%97%E7%9A%84cookies%E5%92%8Cmd5%E5%8A%A0%E5%AF%86/2.png" alt="图片"></p>
-<p>可以看到很多关键词，跟我们需要的关键词一样，这里打上断点，然后看看参数</p>
-]]></content>
-      <tags>
-        <tag>爬虫</tag>
-      </tags>
-  </entry>
+<search> 
+  
+  
+    
+    <entry>
+      <title>python爬虫-某街的cookies和md5加密</title>
+      <link href="/2021/09/20/python%E7%88%AC%E8%99%AB-%E6%9F%90%E8%A1%97%E7%9A%84cookies%E5%92%8Cmd5%E5%8A%A0%E5%AF%86/"/>
+      <url>/2021/09/20/python%E7%88%AC%E8%99%AB-%E6%9F%90%E8%A1%97%E7%9A%84cookies%E5%92%8Cmd5%E5%8A%A0%E5%AF%86/</url>
+      
+        <content type="html"><![CDATA[<p>目标网站，参考鱼哥的</p><p>aHR0cHM6Ly9saXN0Lm1vZ3UuY29tL3NlYXJjaC9nb29kcz9xPSVFNSVCNyVBNSVFOCVBMyU4NSVFOCVBMyVBNA==</p><p>第一步抓包</p><p><img src="/2021/09/20/python%E7%88%AC%E8%99%AB-%E6%9F%90%E8%A1%97%E7%9A%84cookies%E5%92%8Cmd5%E5%8A%A0%E5%AF%86/1.png" alt="图片"></p><span id="more"></span><p>可以看到里面有10个参数，取一个参数mw-ttid去全局检索</p><p><img src="/2021/09/20/python%E7%88%AC%E8%99%AB-%E6%9F%90%E8%A1%97%E7%9A%84cookies%E5%92%8Cmd5%E5%8A%A0%E5%AF%86/2.png" alt="图片"></p><p>可以看到很多关键词，跟我们需要的关键词一样，这里打上断点调试，然后看看参数</p><p>第一个参数，mw-appkey，调试进入</p><p><img src="/2021/09/20/python%E7%88%AC%E8%99%AB-%E6%9F%90%E8%A1%97%E7%9A%84cookies%E5%92%8Cmd5%E5%8A%A0%E5%AF%86/3.png" alt="图片"></p><p>一个简单的switch，因为this._type是undefined，所以我们返回的是100028，这个参数应该是写死的。</p><p>第二个参数，mw-ttid，调试进入</p><p><img src="/2021/09/20/python%E7%88%AC%E8%99%AB-%E6%9F%90%E8%A1%97%E7%9A%84cookies%E5%92%8Cmd5%E5%8A%A0%E5%AF%86/4.png" alt="图片"></p><p>可以看到，这里是使用”NMMain@”+ 我们的一些版本信息，这里也是写死的，因为我们模拟有一个浏览器版本信息就行</p><p>第三个参数mw-t，很明显是时间戳了</p><p>第四个参数mw-uuid，调试进入</p><p><img src="/2021/09/20/python%E7%88%AC%E8%99%AB-%E6%9F%90%E8%A1%97%E7%9A%84cookies%E5%92%8Cmd5%E5%8A%A0%E5%AF%86/5.png" alt="图片"><br><img src="/2021/09/20/python%E7%88%AC%E8%99%AB-%E6%9F%90%E8%A1%97%E7%9A%84cookies%E5%92%8Cmd5%E5%8A%A0%E5%AF%86/6.png" alt="图片"></p><p>很明显了，就是获取我们的cookie，键为__mgjuuid的</p><p>第五个参数，mw-h5-os，调试进入</p><p><img src="/2021/09/20/python%E7%88%AC%E8%99%AB-%E6%9F%90%E8%A1%97%E7%9A%84cookies%E5%92%8Cmd5%E5%8A%A0%E5%AF%86/7.png" alt="图片"></p><p>很明显，这个返回的os信息，也应该是写死的</p><p>接下来就是重头戏了，mw-sign参数，我们打断点调试下去找到他</p><p><img src="/2021/09/20/python%E7%88%AC%E8%99%AB-%E6%9F%90%E8%A1%97%E7%9A%84cookies%E5%92%8Cmd5%E5%8A%A0%E5%AF%86/8.png" alt="图片"></p><p>先进去z方法看看，</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 爬虫 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>python爬虫 RSA加密破解</title>
+      <link href="/2021/09/07/python%E7%88%AC%E8%99%AB-RSA%E5%8A%A0%E5%AF%86%E7%A0%B4%E8%A7%A3/"/>
+      <url>/2021/09/07/python%E7%88%AC%E8%99%AB-RSA%E5%8A%A0%E5%AF%86%E7%A0%B4%E8%A7%A3/</url>
+      
+        <content type="html"><![CDATA[<p>目标网站</p><p>aHR0cDovL2Nhcy5zd3VzdC5lZHUuY24vYXV0aHNlcnZlci9sb2dpbg==</p><p>加密定位和分析</p><p><img src="/2021/09/07/python%E7%88%AC%E8%99%AB-RSA%E5%8A%A0%E5%AF%86%E7%A0%B4%E8%A7%A3/1111.png" alt="python爬虫-RSA加密破解"></p><span id="more"></span><p>第六个参数password是一段加密的参数</p><p><img src="/2021/09/07/python%E7%88%AC%E8%99%AB-RSA%E5%8A%A0%E5%AF%86%E7%A0%B4%E8%A7%A3/2222.png" alt="python爬虫-RSA加密破解"></p><p> 这个就是今天的主要目标了，也是唯一的加密参数。</p><p>   1.先去搜索下password关键词</p><p><img src="/2021/09/07/python%E7%88%AC%E8%99%AB-RSA%E5%8A%A0%E5%AF%86%E7%A0%B4%E8%A7%A3/3333.png" alt="python爬虫-RSA加密破解"></p><p> 可以逐个点开看看，这里很明显是最后一个给的赋值。</p><p> <img src="/2021/09/07/python%E7%88%AC%E8%99%AB-RSA%E5%8A%A0%E5%AF%86%E7%A0%B4%E8%A7%A3/4444.png" alt="python爬虫-RSA加密破解"></p><p> 进去后我们就能看到，这里用的RSA加密，断点进入RSAUtils里面</p><p>  <img src="/2021/09/07/python%E7%88%AC%E8%99%AB-RSA%E5%8A%A0%E5%AF%86%E7%A0%B4%E8%A7%A3/5555.png" alt="python爬虫-RSA加密破解"></p><p>   接下来直接把这个js文件下载下来然后修改运行就能获取到加密了</p><p>  <img src="/2021/09/07/python%E7%88%AC%E8%99%AB-RSA%E5%8A%A0%E5%AF%86%E7%A0%B4%E8%A7%A3/6666.png" alt="python爬虫-RSA加密破解"></p><p>  定义一个js函数来计算返回值</p><p>最后一个参数是验证码。</p><p>请求成功</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 爬虫 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
 </search>
